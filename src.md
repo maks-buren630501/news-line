@@ -33,6 +33,14 @@ Windows 10 news
 ## 2.2 Интерфейс пользователя:
 
 Представлен на мокапах
+| Показ артефактов|
+|:---|:---|
+
+|главное окно|<img src="https://github.com/maks-buren630501/news-line/blob/master/Mockups/main%20window%20.png>"|
+          
+|окно новости|<img src="https://github.com/maks-buren630501/news-line/blob/master/Mockups/curent%20news%20page.png>"|
+          
+|окно настоек|<img src="https://github.com/maks-buren630501/news-line/blob/master/Mockups/setting%20page.png>"|
 
 ## 2.3 Характеристики пользователей:
 
@@ -76,7 +84,6 @@ Windows 10 news
 ### 3.2.1 Атрибуты качества:
 1) На главной странице приложения одновременно выводится не более 4 новостей.
 2) Размер иконок кнопок должен превышать размер символа
-3)
 
 ### 3.2.2 Ограничения
 1) Для обновления новостей требуется подключения к сети интернет
