@@ -35,11 +35,13 @@ Windows 10 news
 | Показ артефактов|
 |:---|:---|
 
-|главное окно|<img src="https://github.com/maks-buren630501/news-line/blob/master/Mockups/main%20window%20.png>"|
-          
-|окно новости|<img src="https://github.com/maks-buren630501/news-line/blob/master/Mockups/curent%20news%20page.png>"|
-          
-|окно настоек|<img src="https://github.com/maks-buren630501/news-line/blob/master/Mockups/setting%20page.png>"|
+|главное окно|<img src="https://raw.githubusercontent.com/maks-buren630501/news-line/master/Mockups/main%20window%20.png"|
+
+с главного окно можно перейти на окно конкретной новости, отсортировать новости по времени и категориям, перейти в меню настроек.
+|окно новости|<img src="https://raw.githubusercontent.com/maks-buren630501/news-line/master/Mockups/curent%20news%20page.png"|
+с окна новости можно перейти по ссылке на первоисточник и вернуться назад к списку новостей.          
+|окно настоек|<img src="https://raw.githubusercontent.com/maks-buren630501/news-line/master/Mockups/setting%20page.png"|
+в окне новостей можно изменить цветовую гамму, выбрать включенные сайты, включть и выклюить уведомления
 
 ## 2.3 Характеристики пользователей:
 
