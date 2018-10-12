@@ -32,10 +32,8 @@ Windows 10 news
 ## 2.2 Интерфейс пользователя:
 
 Представлен на мокапах
-| Показ артефактов|
-|:---|:---|
-
-|главное окно|<img src="https://raw.githubusercontent.com/maks-buren630501/news-line/master/Mockups/main%20window%20.png"|
+#### **Вид приложения при запуске:**
+![](https://github.com/maks-buren630501/news-line/blob/master/Mockups/main%20window%20.png)
 
 с главного окно можно перейти на окно конкретной новости, отсортировать новости по времени и категориям, перейти в меню настроек.
 |окно новости|<img src="https://raw.githubusercontent.com/maks-buren630501/news-line/master/Mockups/curent%20news%20page.png"|
