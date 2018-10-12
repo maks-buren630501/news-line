@@ -38,7 +38,7 @@ Windows 10 news
 #### **окно новости:**
 ![](https://github.com/maks-buren630501/news-line/blob/master/Mockups/curent%20news%20page.png)
 #### с окна новости можно перейти по ссылке на первоисточник и вернуться назад к списку новостей.          
-#### **окно настроек:
+#### окно настроек:
 ![](https://github.com/maks-buren630501/news-line/blob/master/Mockups/setting%20page.png)
 #### в окне настроек можно изменить цветовую гамму, выбрать включенные сайты, включть и выклюить уведомления
 
