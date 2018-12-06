@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerMain">
+   <top>
+      <HBox fx:id="hbox" prefHeight="33.0" prefWidth="485.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" text="Сегодня" onAction="#setDayToday"/>
+            <Button mnemonicParsing="false" text="За неделю" onAction="#setDayWeek"/>
+            <Button mnemonicParsing="false" text="twitter" onAction="#setDayTwitter"/>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox fx:id="vbox" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="политика" onAction="#setTypePolitic"/>
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="спорт" onAction="#setTypeSport"/>
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" text="экономика" onAction="#setTypeEconomic"/>
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="101.0" text="культура" onAction="#setTypeCulture"/>
+            <Button mnemonicParsing="false" prefHeight="13.0" prefWidth="100.0" text="настройки" onAction="#showSettingWindow"/>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <ListView fx:id="centerListView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
