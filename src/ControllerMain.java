@@ -12,6 +12,9 @@ import java.net.URL;
 
 import java.util.ResourceBundle;
 
+/**
+ * this class for work with main window
+ */
 public class ControllerMain implements Initializable{
 
     private MainWindow mainWindow;
@@ -32,6 +35,9 @@ public class ControllerMain implements Initializable{
     @FXML
     ListView centerListView;
 
+    /**
+     * is default constructor for ControllerMain
+     */
     public ControllerMain(){
         mainWindow = new MainWindow();
         controllerSetting = new ControllerSetting();
@@ -44,6 +50,9 @@ public class ControllerMain implements Initializable{
     }
 
     Observer observer = new Observer("Main") {
+        /**
+         * override method of Observer class with new reaction for notify observers
+         */
         @Override
         public void update(){
             if(observer.status==10)
@@ -79,7 +88,7 @@ public class ControllerMain implements Initializable{
 
          this.centerListView.getSelectionModel().clearSelection();
          if(this.onliner==false&&this.bbcRu==false&&this.tutBy==false){
-             System.out.println("ergeb");
+
              ObservableList articles = FXCollections.observableArrayList();
              ArticleWindow articleWindow = new ArticleWindow();
              Group group = articleWindow.getErrorGroup();
@@ -146,6 +155,15 @@ public class ControllerMain implements Initializable{
              if(m!=0) s=m;
              if(d!=0) s=d;
          }
+        if(s==0){
+            ObservableList articles2 = FXCollections.observableArrayList();
+            ArticleWindow articleWindow = new ArticleWindow();
+            Group group = articleWindow.getErrorGroup();
+            articles.addAll(group);
+            this.centerListView.setItems(articles);
+            return;
+
+        }
          for(int i =0;i<s;i++){
              ArticleWindow articleWindow1 = new ArticleWindow();
              ArticleWindow articleWindow2 = new ArticleWindow();

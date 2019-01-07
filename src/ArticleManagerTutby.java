@@ -5,12 +5,25 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
+/**
+ * this class is extend from basic ArticleManager for parsing Onliner.by
+  */
+
 public class ArticleManagerTutby extends ArticleManager{
 
+    /**
+     * is override function of get politic news
+     */
     @Override
     public void getArticlePolitic() throws IOException {
         this.listArticles.clear();
-        Document document = Jsoup.connect("https://news.tut.by/geonews/minsk/").get();
+        Document document;
+        try {
+            document = Jsoup.connect("https://news.tut.by/geonews/minsk/").get();
+        }
+        catch (Throwable throwable){
+            return;
+        }
         Elements elements = document.getElementsByAttributeValue("class","news-entry big annoticed time ni");
         elements.forEach(element -> {
             Element element1 = element.child(0);
@@ -23,13 +36,21 @@ public class ArticleManagerTutby extends ArticleManager{
 
             listArticles.addArticle(article);
         });
-
     }
 
+    /**
+     * is override function of get economic news
+     */
     @Override
     public void getArticleEconomic() throws IOException {
         this.listArticles.clear();
-        Document document = Jsoup.connect("https://news.tut.by/economics/").get();
+        Document document;
+        try {
+            document = Jsoup.connect("https://news.tut.by/economics/").get();
+        }
+        catch (Throwable throwable){
+            return;
+        }
         Elements elements = document.getElementsByAttributeValue("class","news-entry big annoticed time ni");
         elements.forEach(element -> {
             Element element1 = element.child(0);
@@ -42,13 +63,21 @@ public class ArticleManagerTutby extends ArticleManager{
 
             listArticles.addArticle(article);
         });
+   }
 
-    }
-
+    /**
+     * is override function of get culture news
+     */
     @Override
     public void getArticleCulture() throws IOException {
         this.listArticles.clear();
-        Document document = Jsoup.connect("https://news.tut.by/society/").get();
+        Document document;
+        try {
+            document = Jsoup.connect("https://news.tut.by/society/").get();
+        }
+        catch (Throwable throwable){
+            return;
+        }
         Elements elements = document.getElementsByAttributeValue("class","news-entry big annoticed time ni");
         elements.forEach(element -> {
             Element element1 = element.child(0);
@@ -60,13 +89,21 @@ public class ArticleManagerTutby extends ArticleManager{
             Article article = new Article(url,title,text,Type.Culture,Localization.Belarus);
             listArticles.addArticle(article);
         });
-
     }
 
+    /**
+     * is override function of get sport news
+     */
     @Override
     public void getArticleSport() throws IOException {
         this.listArticles.clear();
-        Document document = Jsoup.connect("https://sport.tut.by/rubric/football/").get();
+        Document document;
+        try {
+            document = Jsoup.connect("https://sport.tut.by/rubric/football/").get();
+        }
+        catch (Throwable throwable){
+            return;
+        }
         Elements elements = document.getElementsByAttributeValue("class","news-entry big annoticed time ni");
         elements.forEach(element -> {
             Element element1 = element.child(0);
