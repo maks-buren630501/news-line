@@ -1,5 +1,5 @@
 # news-line 
- [папка с кодом] (https://github.com/maks-buren630501/news-line/tree/master/src)
+ [папка с кодом](https://github.com/maks-buren630501/news-line/tree/master/src)
  
  SRC https://github.com/maks-buren630501/news-line/blob/master/src.md
  
