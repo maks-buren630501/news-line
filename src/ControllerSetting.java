@@ -10,7 +10,9 @@ import java.net.URL;
 
 import java.util.ResourceBundle;
 
-
+/**
+ * this class for work with setting window
+ */
 public class ControllerSetting implements Initializable {
 
     SettingWindow settingWindow = new SettingWindow();
@@ -31,20 +33,29 @@ public class ControllerSetting implements Initializable {
     CheckBox bbcru;
 
 
+    /**
+     * this default constructor for ControllerSetting class
+     */
     public ControllerSetting(){
         observer = new Observer("preSetting");
         observer.setStatus(5);
     }
 
 
-
-
+    /**
+     * this start method for ControllerSetting class
+     * @throws Exception
+     */
     public void start() throws Exception {
         this.settingWindow.start();
     }
 
 
-
+    /**
+     * this initialize method for Observer in this class
+     * @param location
+     * @param resources
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -80,6 +91,9 @@ public class ControllerSetting implements Initializable {
         locationChoiceBox.getItems().add("Мир");
     }
 
+    /**
+     * this method notify all Observers about press to button tut by
+     */
     @FXML
     public void pressTut_by(){
         observer.notifyAllObservers(1);
@@ -87,6 +101,9 @@ public class ControllerSetting implements Initializable {
 
     }
 
+    /**
+     * this method notify all Observers about press to button bbc ru
+     */
     @FXML
     public void pressBbc_ru(){
         observer.notifyAllObservers(2);
@@ -94,6 +111,9 @@ public class ControllerSetting implements Initializable {
 
     }
 
+    /**
+     * this method notify all Observers about press to button tut by
+     */
     @FXML
     public void pressAp_pro(){
         observer.notifyAllObservers(4);

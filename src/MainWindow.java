@@ -24,13 +24,18 @@ enum StyleMain{
 }
 
 
-
-
+/**
+ * this class for storage status of main window
+ */
 public class MainWindow {
     private Day day = Day.Today;
     private Type type = Type.Politic;
     private StyleMain styleMain = StyleMain.White;
 
+    /**
+     * this start method for main window
+     * @throws Exception
+     */
     public void start() throws Exception {
         Stage primaryStage = new Stage();
         Parent content = FXMLLoader.load(getClass().getResource("MainWindow.fxml"));
@@ -42,6 +47,10 @@ public class MainWindow {
         primaryStage.show();
     }
 
+    /**
+     * this method for set day
+     * @param day index of setting day
+     */
     public void setDay(int day){
         switch (day){
             case 1: this.day = Day.Today; break;
@@ -49,7 +58,10 @@ public class MainWindow {
             case 3: this.day = Day.Twitter; break;
         }
     }
-
+    /**
+     * this method for set type
+     * @param type index of setting day
+     */
     public void setType(int type){
         switch (type){
             case 1: this.type = Type.Politic; break;
@@ -60,10 +72,18 @@ public class MainWindow {
     }
 
 
+    /**
+     * this method return style of main window
+     * @return style main window
+     */
     public StyleMain getStyleMain() {
         return styleMain;
     }
 
+    /**
+     * this setter method for style
+     * @param styleMain type of style
+     */
     public void setStyleMain(StyleMain styleMain) {
         this.styleMain = styleMain;
     }

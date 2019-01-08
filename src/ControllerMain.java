@@ -79,11 +79,21 @@ public class ControllerMain implements Initializable{
         }
     };
 
+    /**
+     * this override method for observer, than changes status
+     * @param location
+     * @param resources
+     */
      @Override
     public void initialize(URL location, ResourceBundle resources) {
          this.observer.setStatus(10);
     }
 
+    /**
+     * this method displays articles an main window
+     * @param type type of displays news
+     * @throws IOException
+     */
     public void showArticle(Type type) throws IOException {
 
          this.centerListView.getSelectionModel().clearSelection();
@@ -190,18 +200,28 @@ public class ControllerMain implements Initializable{
     }
 
 
-
+    /**
+     * this start method for main window
+     * @throws Exception
+     */
     public void start() throws Exception {
         mainWindow.start();
     }
 
 
+    /**
+     * this method displays setting window
+     * @throws Exception
+     */
     @FXML
     public void showSettingWindow() throws Exception {
 
         this.controllerSetting.start();
     }
 
+    /**
+     * this method change background color
+     */
     public void changeBackgroundColor() {
         StyleMain styleMain = mainWindow.getStyleMain();
 
@@ -216,57 +236,78 @@ public class ControllerMain implements Initializable{
         }
     }
 
+    /**
+     * this method set news range to today
+     */
     @FXML
     public void setDayToday(){
        mainWindow.setDay(1);
     }
-
+    /**
+     * this method set news range to week
+     */
     @FXML
     public void setDayWeek(){
         mainWindow.setDay(2);
     }
-
+    /**
+     * this method set news range to twitter
+     */
     @FXML
     public void setDayTwitter(){
         mainWindow.setDay(3);
     }
-
+    /**
+     * this method set news range to today
+     */
     @FXML
     public void setTypePolitic() throws IOException {
         mainWindow.setType(1);
         this.showArticle(Type.Politic);
 
     }
-
+    /**
+     * this method set type to sport
+     */
     @FXML
     public void setTypeSport() throws IOException {
         mainWindow.setType(2);
         this.showArticle(Type.Sport);
 
     }
-
+    /**
+     * this method set type to economic
+     */
     @FXML
     public void setTypeEconomic() throws IOException {
         mainWindow.setType(3);
         this.showArticle(Type.Economic);
      }
-
+    /**
+     * this method set type to culture
+     */
     @FXML
     public void setTypeCulture() throws IOException {
         mainWindow.setType(4);
         this.showArticle(Type.Culture);
     }
-
+    /**
+     * this method change tut by to opposite state
+     */
     public void changeTut(){
         if(this.tutBy == true) this.tutBy = false;
         else this.tutBy = true;
     }
-
+    /**
+     * this method change bbc ru to opposite state
+     */
     public void changeBbcRu(){
         if(this.bbcRu == true) this.bbcRu = false;
         else this.bbcRu = true;
      }
-
+    /**
+     * this method change Onliner to opposite state
+     */
     public void changeOnliner(){
         if(this.onliner == true) this.onliner = false;
         else this.onliner = true;
