@@ -1,4 +1,7 @@
 # news-line 
+
+Десктопное приложение для вывода новостей с 3-х новостных сайтов. Язык разработки Java.
+
  [папка с кодом](https://github.com/maks-buren630501/news-line/tree/master/src)
  
  [SRC](https://github.com/maks-buren630501/news-line/blob/master/src.md)
