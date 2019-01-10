@@ -19,4 +19,4 @@
  
  [Мокапы](https://github.com/maks-buren630501/news-line/tree/master/Mockups)
  
- [Использование бесплатно](https://github.com/maks-buren630501/news-line/tree/master/documents/patern%20using)
+ [Использование патернов](https://github.com/maks-buren630501/news-line/tree/master/documents/patern%20using)
